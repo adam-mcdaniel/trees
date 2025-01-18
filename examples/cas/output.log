@@ -1,0 +1,453 @@
+2025-01-18T02:54:37.724679Z  INFO cas: Welcome to...
+2025-01-18T02:54:37.724715Z  INFO cas:   ___      _                 _     
+2025-01-18T02:54:37.724719Z  INFO cas:  / _ \    | |               ( )    
+2025-01-18T02:54:37.724723Z  INFO cas: / /_\ \ __| | __ _ _ __ ___ |/ ___ 
+2025-01-18T02:54:37.724729Z  INFO cas: |  _  |/ _` |/ _` | '_ ` _ \  / __|
+2025-01-18T02:54:37.724733Z  INFO cas: | | | | (_| | (_| | | | | | | \__ \
+2025-01-18T02:54:37.724737Z  INFO cas: \_| |_/\__,_|\__,_|_| |_| |_| |___/
+2025-01-18T02:54:37.724740Z  INFO cas:                                    
+2025-01-18T02:54:37.724743Z  INFO cas:                                    
+2025-01-18T02:54:37.724746Z  INFO cas:  _____    ___    _____             
+2025-01-18T02:54:37.724749Z  INFO cas: /  __ \  / _ \  /  ___|            
+2025-01-18T02:54:37.724752Z  INFO cas: | /  \/ / /_\ \ \ `--.             
+2025-01-18T02:54:37.724754Z  INFO cas: | |     |  _  |  `--. \            
+2025-01-18T02:54:37.724757Z  INFO cas: | \__/\_| | | |_/\__/ /            
+2025-01-18T02:54:37.724760Z  INFO cas:  \____(_)_| |_(_)____(_)           
+2025-01-18T02:54:37.724763Z  INFO cas:                                    
+2025-01-18T02:54:37.724766Z  INFO cas:                                    
+2025-01-18T02:54:37.724769Z  INFO cas: *** BEGIN EVALUATION ***
+2025-01-18T02:54:37.724788Z  INFO cas: Given expression: ((((x * x) * (x - 3)) + (3 * x)) - 1) = 0
+2025-01-18T02:54:37.724792Z  INFO cas: Starting CAS system...
+2025-01-18T02:54:37.725054Z TRACE cas: Found unvisited expression: ((((x ^ 2) * (x + -3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.725059Z TRACE cas: Search depth: 0
+2025-01-18T02:54:37.726248Z  INFO cas: Found new candidate at iteration 0     | (((x ^ 2) * (x + -3)) + ((3 * x) + -1)) = 0
+2025-01-18T02:54:37.726293Z TRACE cas: Found unvisited expression: (((x ^ 2) * (x + -3)) + ((3 * x) + -1)) = 0
+2025-01-18T02:54:37.726302Z TRACE cas: Search depth: 1
+2025-01-18T02:54:37.727497Z TRACE cas: Found unvisited expression: (-1 + ((x * 3) + ((-3 + x) * (x ^ 2)))) = 0
+2025-01-18T02:54:37.727506Z TRACE cas: Search depth: 2
+2025-01-18T02:54:37.728654Z TRACE cas: Found unvisited expression: ((((x ^ 3) + ((x ^ 2) * -3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.728664Z TRACE cas: Search depth: 3
+2025-01-18T02:54:37.729700Z TRACE cas: Found unvisited expression: (((x ^ 2) * (x + -3)) + (3 * x)) = 1
+2025-01-18T02:54:37.729709Z TRACE cas: Search depth: 4
+2025-01-18T02:54:37.730494Z TRACE cas: Already visited expression: ((((x ^ 2) * (x + -3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.730518Z TRACE cas: Found unvisited expression: (((x ^ 3) + ((x ^ 2) * -3)) + ((3 * x) + -1)) = 0
+2025-01-18T02:54:37.730526Z TRACE cas: Search depth: 5
+2025-01-18T02:54:37.731680Z TRACE cas: Found unvisited expression: ((x ^ 2) * (x + -3)) = (((3 * x) + -1) * -1)
+2025-01-18T02:54:37.731696Z TRACE cas: Search depth: 6
+2025-01-18T02:54:37.732734Z TRACE cas: Found unvisited expression: ((-1 + (x * 3)) + ((-3 + x) * (x ^ 2))) = 0
+2025-01-18T02:54:37.732739Z TRACE cas: Search depth: 7
+2025-01-18T02:54:37.733688Z TRACE cas: Already visited expression: ((-1 + (x * 3)) + ((-3 + x) * (x ^ 2))) = 0
+2025-01-18T02:54:37.733698Z TRACE cas: Found unvisited expression: (-1 + ((x * 3) + ((-3 * (x ^ 2)) + (x * (x ^ 2))))) = 0
+2025-01-18T02:54:37.733701Z TRACE cas: Search depth: 8
+2025-01-18T02:54:37.735096Z TRACE cas: Found unvisited expression: -1 = (((x * 3) + ((-3 + x) * (x ^ 2))) * -1)
+2025-01-18T02:54:37.735100Z TRACE cas: Search depth: 9
+2025-01-18T02:54:37.736027Z TRACE cas: Already visited expression: ((((x ^ 2) * (x + -3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.736038Z TRACE cas: Found unvisited expression: ((x ^ 3) + ((((x ^ 2) * -3) + (3 * x)) + -1)) = 0
+2025-01-18T02:54:37.736040Z TRACE cas: Search depth: 10
+2025-01-18T02:54:37.736992Z TRACE cas: Found unvisited expression: (((x ^ 3) + ((x ^ 2) * -3)) + (3 * x)) = 1
+2025-01-18T02:54:37.737000Z TRACE cas: Search depth: 11
+2025-01-18T02:54:37.737826Z TRACE cas: Found unvisited expression: (-1 + ((x * 3) + ((-3 * (x ^ 2)) + (x ^ 3)))) = 0
+2025-01-18T02:54:37.737830Z TRACE cas: Search depth: 12
+2025-01-18T02:54:37.738652Z TRACE cas: Already visited expression: (((x ^ 3) + ((x ^ 2) * -3)) + (3 * x)) = 1
+2025-01-18T02:54:37.738661Z TRACE cas: Already visited expression: ((((x ^ 2) * (x + -3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.738666Z TRACE cas: Found unvisited expression: ((x * 3) + ((-3 + x) * (x ^ 2))) = 1
+2025-01-18T02:54:37.738669Z TRACE cas: Search depth: 13
+2025-01-18T02:54:37.739340Z TRACE cas: Found unvisited expression: ((x ^ 3) + (((x ^ 2) * -3) + ((3 * x) + -1))) = 0
+2025-01-18T02:54:37.739344Z TRACE cas: Search depth: 14
+2025-01-18T02:54:37.740207Z TRACE cas: Already visited expression: ((((x ^ 3) + ((x ^ 2) * -3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.740219Z TRACE cas: Found unvisited expression: ((x ^ 3) + ((x ^ 2) * -3)) = (((3 * x) + -1) * -1)
+2025-01-18T02:54:37.740221Z TRACE cas: Search depth: 15
+2025-01-18T02:54:37.741123Z TRACE cas: Found unvisited expression: ((-1 + (x * 3)) + ((-3 * (x ^ 2)) + (x ^ 3))) = 0
+2025-01-18T02:54:37.741126Z TRACE cas: Search depth: 16
+2025-01-18T02:54:37.742250Z TRACE cas: Found unvisited expression: ((x ^ 3) + ((x ^ 2) * -3)) = ((-3 * x) + 1)
+2025-01-18T02:54:37.742254Z TRACE cas: Search depth: 17
+2025-01-18T02:54:37.743111Z TRACE cas: Found unvisited expression: (x ^ 2) = ((((3 * x) + -1) * -1) / (x + -3))
+2025-01-18T02:54:37.743115Z TRACE cas: Search depth: 18
+2025-01-18T02:54:37.743867Z TRACE cas: Found unvisited expression: (((x ^ 2) * (x + -3)) * -1) = ((3 * x) + -1)
+2025-01-18T02:54:37.743873Z TRACE cas: Search depth: 19
+2025-01-18T02:54:37.744881Z TRACE cas: Found unvisited expression: ((-3 + x) * (x ^ 2)) = (-1 * (-1 + (x * 3)))
+2025-01-18T02:54:37.744885Z TRACE cas: Search depth: 20
+2025-01-18T02:54:37.745550Z TRACE cas: Already visited expression: (-1 + ((x * 3) + ((-3 + x) * (x ^ 2)))) = 0
+2025-01-18T02:54:37.745556Z TRACE cas: Found unvisited expression: ((-1 + (x * 3)) + ((-3 * (x ^ 2)) + (x * (x ^ 2)))) = 0
+2025-01-18T02:54:37.745559Z TRACE cas: Search depth: 21
+2025-01-18T02:54:37.746554Z TRACE cas: Found unvisited expression: (-1 + (x * 3)) = (((-3 + x) * (x ^ 2)) * -1)
+2025-01-18T02:54:37.746557Z TRACE cas: Search depth: 22
+2025-01-18T02:54:37.747530Z TRACE cas: Already visited expression: (((x ^ 2) * (x + -3)) + ((3 * x) + -1)) = 0
+2025-01-18T02:54:37.747537Z TRACE cas: Found unvisited expression: (-1 + ((x * 3) + ((x ^ 2) * (-3 + x)))) = 0
+2025-01-18T02:54:37.747540Z TRACE cas: Search depth: 23
+2025-01-18T02:54:37.748355Z TRACE cas: Found unvisited expression: ((-1 + ((x * 3) + (-3 * (x ^ 2)))) + (x * (x ^ 2))) = 0
+2025-01-18T02:54:37.748376Z TRACE cas: Search depth: 24
+2025-01-18T02:54:37.749557Z TRACE cas: Found unvisited expression: -1 = (((x * 3) + ((-3 * (x ^ 2)) + (x * (x ^ 2)))) * -1)
+2025-01-18T02:54:37.749563Z TRACE cas: Search depth: 25
+2025-01-18T02:54:37.750862Z TRACE cas: Already visited expression: ((((x ^ 3) + ((x ^ 2) * -3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.750876Z TRACE cas: Found unvisited expression: -1 = ((-3 * x) + (((-3 * (x ^ 2)) + (x * (x ^ 2))) * -1))
+2025-01-18T02:54:37.750878Z TRACE cas: Search depth: 26
+2025-01-18T02:54:37.751853Z TRACE cas: Found unvisited expression: (((x * 3) + ((-3 + x) * (x ^ 2))) * -1) = -1
+2025-01-18T02:54:37.751865Z TRACE cas: Search depth: 27
+2025-01-18T02:54:37.752572Z TRACE cas: Found unvisited expression: ((((x * 3) + ((-3 + x) * (x ^ 2))) * -1) + 1) = 0
+2025-01-18T02:54:37.752581Z TRACE cas: Search depth: 28
+2025-01-18T02:54:37.753568Z TRACE cas: Found unvisited expression: -1 = (-1 * (((x ^ 2) * (x + -3)) + (3 * x)))
+2025-01-18T02:54:37.753575Z TRACE cas: Search depth: 29
+2025-01-18T02:54:37.754444Z TRACE cas: Already visited expression: ((x ^ 3) + (((x ^ 2) * -3) + ((3 * x) + -1))) = 0
+2025-01-18T02:54:37.754451Z TRACE cas: Found unvisited expression: (((x ^ 3) + (((x ^ 2) * -3) + (3 * x))) + -1) = 0
+2025-01-18T02:54:37.754453Z TRACE cas: Search depth: 30
+2025-01-18T02:54:37.755256Z TRACE cas: Found unvisited expression: (x ^ 3) = (((((x ^ 2) * -3) + (3 * x)) + -1) * -1)
+2025-01-18T02:54:37.755262Z TRACE cas: Search depth: 31
+2025-01-18T02:54:37.756199Z TRACE cas: Found unvisited expression: ((-1 + ((x * 3) + (-3 * (x ^ 2)))) + (x ^ 3)) = 0
+2025-01-18T02:54:37.756209Z TRACE cas: Search depth: 32
+2025-01-18T02:54:37.757150Z TRACE cas: Found unvisited expression: ((x ^ 3) + (((x ^ 2) * -3) + (3 * x))) = 1
+2025-01-18T02:54:37.757155Z TRACE cas: Search depth: 33
+2025-01-18T02:54:37.758003Z TRACE cas: Already visited expression: ((((x ^ 3) + ((x ^ 2) * -3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.758013Z TRACE cas: Found unvisited expression: ((x * 3) + ((-3 * (x ^ 2)) + (x ^ 3))) = 1
+2025-01-18T02:54:37.758016Z TRACE cas: Search depth: 34
+2025-01-18T02:54:37.758876Z TRACE cas: Already visited expression: ((-1 + ((x * 3) + (-3 * (x ^ 2)))) + (x ^ 3)) = 0
+2025-01-18T02:54:37.758893Z TRACE cas: Found unvisited expression: -1 = (((x * 3) + ((-3 * (x ^ 2)) + (x ^ 3))) * -1)
+2025-01-18T02:54:37.758897Z TRACE cas: Search depth: 35
+2025-01-18T02:54:37.759802Z TRACE cas: Already visited expression: ((((x ^ 3) + ((x ^ 2) * -3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.759814Z TRACE cas: Found unvisited expression: ((x * 3) + ((-3 * (x ^ 2)) + (x * (x ^ 2)))) = 1
+2025-01-18T02:54:37.759817Z TRACE cas: Search depth: 36
+2025-01-18T02:54:37.760827Z TRACE cas: Found unvisited expression: (((x * 3) + ((-3 + x) * (x ^ 2))) + -1) = 0
+2025-01-18T02:54:37.760835Z TRACE cas: Search depth: 37
+2025-01-18T02:54:37.761583Z TRACE cas: Already visited expression: (((x ^ 2) * (x + -3)) + (3 * x)) = 1
+2025-01-18T02:54:37.761593Z TRACE cas: Already visited expression: (((x ^ 3) + (((x ^ 2) * -3) + (3 * x))) + -1) = 0
+2025-01-18T02:54:37.761604Z TRACE cas: Found unvisited expression: (x ^ 3) = ((((x ^ 2) * -3) + ((3 * x) + -1)) * -1)
+2025-01-18T02:54:37.761608Z TRACE cas: Search depth: 38
+2025-01-18T02:54:37.762340Z TRACE cas: Found unvisited expression: (((-1 + (x * 3)) + (-3 * (x ^ 2))) + (x ^ 3)) = 0
+2025-01-18T02:54:37.762344Z TRACE cas: Search depth: 39
+2025-01-18T02:54:37.763196Z TRACE cas: Already visited expression: ((x ^ 3) + ((x ^ 2) * -3)) = ((-3 * x) + 1)
+2025-01-18T02:54:37.763202Z TRACE cas: Found unvisited expression: (x ^ 3) = ((((3 * x) + -1) * -1) + (3 * (x ^ 2)))
+2025-01-18T02:54:37.763204Z TRACE cas: Search depth: 40
+2025-01-18T02:54:37.764099Z TRACE cas: Found unvisited expression: (((x ^ 3) + ((x ^ 2) * -3)) * -1) = ((3 * x) + -1)
+2025-01-18T02:54:37.764102Z TRACE cas: Search depth: 41
+2025-01-18T02:54:37.764952Z TRACE cas: Found unvisited expression: ((-3 * (x ^ 2)) + (x ^ 3)) = (-1 * (-1 + (x * 3)))
+2025-01-18T02:54:37.764955Z TRACE cas: Search depth: 42
+2025-01-18T02:54:37.765929Z TRACE cas: Already visited expression: (-1 + ((x * 3) + ((-3 * (x ^ 2)) + (x ^ 3)))) = 0
+2025-01-18T02:54:37.765937Z TRACE cas: Already visited expression: (((-1 + (x * 3)) + (-3 * (x ^ 2))) + (x ^ 3)) = 0
+2025-01-18T02:54:37.765949Z TRACE cas: Found unvisited expression: (-1 + (x * 3)) = (((-3 * (x ^ 2)) + (x ^ 3)) * -1)
+2025-01-18T02:54:37.765951Z TRACE cas: Search depth: 43
+2025-01-18T02:54:37.767013Z TRACE cas: Already visited expression: (((x ^ 3) + ((x ^ 2) * -3)) + ((3 * x) + -1)) = 0
+2025-01-18T02:54:37.767020Z TRACE cas: Found unvisited expression: (x ^ 3) = (((-3 * x) + 1) + (3 * (x ^ 2)))
+2025-01-18T02:54:37.767022Z TRACE cas: Search depth: 44
+2025-01-18T02:54:37.767915Z TRACE cas: Found unvisited expression: (((x ^ 3) + ((x ^ 2) * -3)) + -1) = (-3 * x)
+2025-01-18T02:54:37.767919Z TRACE cas: Search depth: 45
+2025-01-18T02:54:37.768640Z TRACE cas: Found unvisited expression: ((-3 * (x ^ 2)) + (x ^ 3)) = (1 + (x * -3))
+2025-01-18T02:54:37.768643Z TRACE cas: Search depth: 46
+2025-01-18T02:54:37.769480Z TRACE cas: Found unvisited expression: (x ^ 2) = (((-3 * x) / (x + -3)) + (1 / (x + -3)))
+2025-01-18T02:54:37.769489Z TRACE cas: Search depth: 47
+2025-01-18T02:54:37.770412Z TRACE cas: Already visited expression: ((x ^ 2) * (x + -3)) = (((3 * x) + -1) * -1)
+2025-01-18T02:54:37.770423Z TRACE cas: Found unvisited expression: (x ^ 2) = ((-1 * (-1 + (x * 3))) / (-3 + x))
+2025-01-18T02:54:37.770430Z TRACE cas: Search depth: 48
+2025-01-18T02:54:37.771224Z TRACE cas: Found unvisited expression: ((x ^ 2) * ((x + -3) * -1)) = ((3 * x) + -1)
+2025-01-18T02:54:37.771244Z TRACE cas: Search depth: 49
+2025-01-18T02:54:37.772034Z TRACE cas: Already visited expression: (((x ^ 3) + ((x ^ 2) * -3)) * -1) = ((3 * x) + -1)
+2025-01-18T02:54:37.772041Z TRACE cas: Already visited expression: ((x ^ 2) * (x + -3)) = (((3 * x) + -1) * -1)
+2025-01-18T02:54:37.772045Z TRACE cas: Found unvisited expression: ((((x ^ 2) * (x + -3)) * -1) + 1) = (3 * x)
+2025-01-18T02:54:37.772047Z TRACE cas: Search depth: 50
+2025-01-18T02:54:37.772723Z TRACE cas: Found unvisited expression: ((-1 + (x * 3)) + ((x ^ 2) * (-3 + x))) = 0
+2025-01-18T02:54:37.772732Z TRACE cas: Search depth: 51
+2025-01-18T02:54:37.773528Z TRACE cas: Already visited expression: ((-1 + (x * 3)) + ((x ^ 2) * (-3 + x))) = 0
+2025-01-18T02:54:37.773536Z TRACE cas: Found unvisited expression: ((((x + -3) * (x ^ 2)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.773538Z TRACE cas: Search depth: 52
+2025-01-18T02:54:37.774275Z TRACE cas: Found unvisited expression: ((x * 3) + (((-3 + x) * (x ^ 2)) + -1)) = 0
+2025-01-18T02:54:37.774279Z TRACE cas: Search depth: 53
+2025-01-18T02:54:37.775167Z TRACE cas: Found unvisited expression: (-1 + (((x ^ 2) * (x + -3)) + (3 * x))) = 0
+2025-01-18T02:54:37.775174Z TRACE cas: Search depth: 54
+2025-01-18T02:54:37.776000Z TRACE cas: Found unvisited expression: (((-3 * (x ^ 2)) + (x ^ 3)) + (3 * x)) = 1
+2025-01-18T02:54:37.776006Z TRACE cas: Search depth: 55
+2025-01-18T02:54:37.776777Z  INFO cas: Found new candidate at iteration 55    | ((((-3 * (x ^ 2)) + (x ^ 3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.776786Z TRACE cas: Already visited expression: (((x ^ 3) + ((x ^ 2) * -3)) + ((3 * x) + -1)) = 0
+2025-01-18T02:54:37.776791Z TRACE cas: Already visited expression: (((-1 + (x * 3)) + (-3 * (x ^ 2))) + (x ^ 3)) = 0
+2025-01-18T02:54:37.776799Z TRACE cas: Already visited expression: ((x ^ 3) + (((x ^ 2) * -3) + ((3 * x) + -1))) = 0
+2025-01-18T02:54:37.776804Z TRACE cas: Found unvisited expression: (-1 + ((x * 3) + (((x ^ 2) * -3) + (x ^ 3)))) = 0
+2025-01-18T02:54:37.776806Z TRACE cas: Search depth: 56
+2025-01-18T02:54:37.777786Z TRACE cas: Already visited expression: ((x ^ 3) + ((((x ^ 2) * -3) + (3 * x)) + -1)) = 0
+2025-01-18T02:54:37.777804Z TRACE cas: Already visited expression: ((((x * 3) + ((-3 + x) * (x ^ 2))) * -1) + 1) = 0
+2025-01-18T02:54:37.777816Z TRACE cas: Found unvisited expression: (1 + (-1 * (((x ^ 2) * (x + -3)) + (3 * x)))) = 0
+2025-01-18T02:54:37.777817Z TRACE cas: Search depth: 57
+2025-01-18T02:54:37.778677Z TRACE cas: Found unvisited expression: ((-1 * (((x ^ 2) * (x + -3)) + (3 * x))) + 1) = 0
+2025-01-18T02:54:37.778681Z TRACE cas: Search depth: 58
+2025-01-18T02:54:37.779473Z TRACE cas: Already visited expression: ((x ^ 3) + ((((x ^ 2) * -3) + (3 * x)) + -1)) = 0
+2025-01-18T02:54:37.779480Z TRACE cas: Already visited expression: ((((x ^ 3) + ((x ^ 2) * -3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.779486Z TRACE cas: Found unvisited expression: (-1 + (((x * 3) + (-3 * (x ^ 2))) + (x ^ 3))) = 0
+2025-01-18T02:54:37.779488Z TRACE cas: Search depth: 59
+2025-01-18T02:54:37.780319Z TRACE cas: Already visited expression: (-1 + (((x * 3) + (-3 * (x ^ 2))) + (x ^ 3))) = 0
+2025-01-18T02:54:37.780333Z TRACE cas: Already visited expression: ((x ^ 3) + ((((x ^ 2) * -3) + (3 * x)) + -1)) = 0
+2025-01-18T02:54:37.780339Z TRACE cas: Already visited expression: (((x ^ 3) + (((x ^ 2) * -3) + (3 * x))) + -1) = 0
+2025-01-18T02:54:37.780351Z TRACE cas: Found unvisited expression: (((x * 3) + ((-3 * (x ^ 2)) + (x ^ 3))) + -1) = 0
+2025-01-18T02:54:37.780354Z TRACE cas: Search depth: 60
+2025-01-18T02:54:37.781201Z TRACE cas: Already visited expression: (-1 + (((x * 3) + (-3 * (x ^ 2))) + (x ^ 3))) = 0
+2025-01-18T02:54:37.781215Z TRACE cas: Found unvisited expression: ((x * 3) + ((x ^ 2) * (-3 + x))) = 1
+2025-01-18T02:54:37.781218Z TRACE cas: Search depth: 61
+2025-01-18T02:54:37.782012Z TRACE cas: Already visited expression: ((x * 3) + ((-3 + x) * (x ^ 2))) = 1
+2025-01-18T02:54:37.782020Z TRACE cas: Found unvisited expression: (((-1 + (x * 3)) + (-3 * (x ^ 2))) + (x * (x ^ 2))) = 0
+2025-01-18T02:54:37.782044Z TRACE cas: Search depth: 62
+2025-01-18T02:54:37.783297Z TRACE cas: Already visited expression: (((-1 + (x * 3)) + (-3 * (x ^ 2))) + (x * (x ^ 2))) = 0
+2025-01-18T02:54:37.783318Z TRACE cas: Already visited expression: (x ^ 3) = (((-3 * x) + 1) + (3 * (x ^ 2)))
+2025-01-18T02:54:37.783323Z TRACE cas: Found unvisited expression: ((-3 * (x ^ 2)) + (x ^ 3)) = (1 + (-3 * x))
+2025-01-18T02:54:37.783328Z TRACE cas: Search depth: 63
+2025-01-18T02:54:37.784120Z TRACE cas: Found unvisited expression: ((x ^ 3) + (-3 * (x ^ 2))) = ((-3 * x) + 1)
+2025-01-18T02:54:37.784127Z TRACE cas: Search depth: 64
+2025-01-18T02:54:37.784883Z TRACE cas: Found unvisited expression: ((((x * 3) + ((-3 * (x ^ 2)) + (x ^ 3))) * -1) + 1) = 0
+2025-01-18T02:54:37.784886Z TRACE cas: Search depth: 65
+2025-01-18T02:54:37.785780Z TRACE cas: Already visited expression: (-1 + ((x * 3) + ((-3 * (x ^ 2)) + (x * (x ^ 2))))) = 0
+2025-01-18T02:54:37.785787Z TRACE cas: Found unvisited expression: (-1 + (((x * 3) + (-3 * (x ^ 2))) + (x * (x ^ 2)))) = 0
+2025-01-18T02:54:37.785788Z TRACE cas: Search depth: 66
+2025-01-18T02:54:37.786640Z TRACE cas: Found unvisited expression: (((x * 3) + ((-3 * (x ^ 2)) + (x * (x ^ 2)))) + -1) = 0
+2025-01-18T02:54:37.786643Z TRACE cas: Search depth: 67
+2025-01-18T02:54:37.787477Z TRACE cas: Already visited expression: (((x * 3) + ((-3 * (x ^ 2)) + (x * (x ^ 2)))) + -1) = 0
+2025-01-18T02:54:37.787489Z TRACE cas: Found unvisited expression: -1 = ((((-3 + x) * (x ^ 2)) * -1) + (-3 * x))
+2025-01-18T02:54:37.787491Z TRACE cas: Search depth: 68
+2025-01-18T02:54:37.788507Z TRACE cas: Found unvisited expression: -1 = ((-3 * x) + (((x ^ 2) * (-3 + x)) * -1))
+2025-01-18T02:54:37.788516Z TRACE cas: Search depth: 69
+2025-01-18T02:54:37.789316Z TRACE cas: Already visited expression: ((x ^ 3) + (((x ^ 2) * -3) + (3 * x))) = 1
+2025-01-18T02:54:37.789323Z TRACE cas: Already visited expression: (((x ^ 3) + ((x ^ 2) * -3)) + (3 * x)) = 1
+2025-01-18T02:54:37.789328Z TRACE cas: Found unvisited expression: (((x * 3) + (-3 * (x ^ 2))) + (x ^ 3)) = 1
+2025-01-18T02:54:37.789330Z TRACE cas: Search depth: 70
+2025-01-18T02:54:37.790071Z TRACE cas: Already visited expression: (((x * 3) + (-3 * (x ^ 2))) + (x ^ 3)) = 1
+2025-01-18T02:54:37.790082Z TRACE cas: Already visited expression: (((x ^ 3) + ((x ^ 2) * -3)) + (3 * x)) = 1
+2025-01-18T02:54:37.790086Z TRACE cas: Already visited expression: (((x ^ 3) + ((x ^ 2) * -3)) + (3 * x)) = 1
+2025-01-18T02:54:37.790091Z TRACE cas: Found unvisited expression: (x ^ 3) = ((-3 * x) + (1 + (3 * (x ^ 2))))
+2025-01-18T02:54:37.790093Z TRACE cas: Search depth: 71
+2025-01-18T02:54:37.790908Z TRACE cas: Found unvisited expression: ((((x * 3) + ((-3 * (x ^ 2)) + (x * (x ^ 2)))) * -1) + 1) = 0
+2025-01-18T02:54:37.790912Z TRACE cas: Search depth: 72
+2025-01-18T02:54:37.791914Z TRACE cas: Found unvisited expression: (((-3 * x) + (((-3 * (x ^ 2)) + (x * (x ^ 2))) * -1)) + 1) = 0
+2025-01-18T02:54:37.791920Z TRACE cas: Search depth: 73
+2025-01-18T02:54:37.792957Z TRACE cas: Already visited expression: (((-3 * x) + (((-3 * (x ^ 2)) + (x * (x ^ 2))) * -1)) + 1) = 0
+2025-01-18T02:54:37.792964Z TRACE cas: Found unvisited expression: -1 = ((-1 * ((x ^ 3) + ((x ^ 2) * -3))) + (x * -3))
+2025-01-18T02:54:37.792965Z TRACE cas: Search depth: 74
+2025-01-18T02:54:37.793924Z TRACE cas: Found unvisited expression: -1 = ((-1 * ((x ^ 3) + ((x ^ 2) * -3))) + (-3 * x))
+2025-01-18T02:54:37.793928Z TRACE cas: Search depth: 75
+2025-01-18T02:54:37.794964Z TRACE cas: Found unvisited expression: -1 = ((-3 * x) + (((-3 * (x ^ 2)) + (x ^ 3)) * -1))
+2025-01-18T02:54:37.794968Z TRACE cas: Search depth: 76
+2025-01-18T02:54:37.795878Z TRACE cas: Found unvisited expression: -1 = ((((-3 * (x ^ 2)) + (x ^ 3)) * -1) + (-3 * x))
+2025-01-18T02:54:37.795881Z TRACE cas: Search depth: 77
+2025-01-18T02:54:37.796838Z TRACE cas: Found unvisited expression: (((x * 3) + (-3 * (x ^ 2))) + (x * (x ^ 2))) = 1
+2025-01-18T02:54:37.796842Z TRACE cas: Search depth: 78
+2025-01-18T02:54:37.797720Z TRACE cas: Found unvisited expression: (-1 * ((-3 + x) * (x ^ 2))) = (-1 + (x * 3))
+2025-01-18T02:54:37.797730Z TRACE cas: Search depth: 79
+2025-01-18T02:54:37.798559Z TRACE cas: Already visited expression: ((x ^ 2) * (x + -3)) = (((3 * x) + -1) * -1)
+2025-01-18T02:54:37.798568Z TRACE cas: Found unvisited expression: (-1 + (x * 3)) = ((-3 + x) * ((x ^ 2) * -1))
+2025-01-18T02:54:37.798570Z TRACE cas: Search depth: 80
+2025-01-18T02:54:37.799304Z TRACE cas: Found unvisited expression: ((-1 + (x * 3)) * -1) = ((-3 + x) * (x ^ 2))
+2025-01-18T02:54:37.799308Z TRACE cas: Search depth: 81
+2025-01-18T02:54:37.800062Z TRACE cas: Found unvisited expression: ((3 * x) + -1) = (-1 * ((x ^ 2) * (x + -3)))
+2025-01-18T02:54:37.800066Z TRACE cas: Search depth: 82
+2025-01-18T02:54:37.800882Z TRACE cas: Found unvisited expression: (x ^ 3) = (((x ^ 2) * 3) + (1 + (x * -3)))
+2025-01-18T02:54:37.800886Z TRACE cas: Search depth: 83
+2025-01-18T02:54:37.801781Z TRACE cas: Already visited expression: ((x ^ 3) + ((x ^ 2) * -3)) = ((-3 * x) + 1)
+2025-01-18T02:54:37.801787Z TRACE cas: Already visited expression: ((x ^ 3) + ((x ^ 2) * -3)) = ((-3 * x) + 1)
+2025-01-18T02:54:37.801797Z TRACE cas: Found unvisited expression: ((x ^ 2) * (-3 + x)) = (-1 * (-1 + (x * 3)))
+2025-01-18T02:54:37.801799Z TRACE cas: Search depth: 84
+2025-01-18T02:54:37.802521Z TRACE cas: Already visited expression: (((x ^ 2) * (x + -3)) * -1) = ((3 * x) + -1)
+2025-01-18T02:54:37.802526Z TRACE cas: Found unvisited expression: ((-1 * (-3 + x)) * (x ^ 2)) = (-1 + (x * 3))
+2025-01-18T02:54:37.802528Z TRACE cas: Search depth: 85
+2025-01-18T02:54:37.803250Z TRACE cas: Already visited expression: (((x ^ 2) * (x + -3)) * -1) = ((3 * x) + -1)
+2025-01-18T02:54:37.803256Z TRACE cas: Already visited expression: -1 = ((-3 * x) + (((-3 * (x ^ 2)) + (x * (x ^ 2))) * -1))
+2025-01-18T02:54:37.803261Z TRACE cas: Found unvisited expression: -1 = ((-3 * x) + ((3 * (x ^ 2)) + ((x * (x ^ 2)) * -1)))
+2025-01-18T02:54:37.803262Z TRACE cas: Search depth: 86
+2025-01-18T02:54:37.804363Z TRACE cas: Found unvisited expression: ((-3 * x) + (((-3 * (x ^ 2)) + (x * (x ^ 2))) * -1)) = -1
+2025-01-18T02:54:37.804367Z TRACE cas: Search depth: 87
+2025-01-18T02:54:37.805403Z TRACE cas: Already visited expression: ((-3 * x) + (((-3 * (x ^ 2)) + (x * (x ^ 2))) * -1)) = -1
+2025-01-18T02:54:37.805418Z TRACE cas: Found unvisited expression: ((x ^ 3) * -1) = (((x ^ 2) * -3) + ((3 * x) + -1))
+2025-01-18T02:54:37.805420Z TRACE cas: Search depth: 88
+2025-01-18T02:54:37.806246Z TRACE cas: Found unvisited expression: ((-1 + (x * 3)) + (-3 * (x ^ 2))) = ((x ^ 3) * -1)
+2025-01-18T02:54:37.806250Z TRACE cas: Search depth: 89
+2025-01-18T02:54:37.807145Z TRACE cas: Found unvisited expression: ((x ^ 3) + (-3 * (x ^ 2))) = (((3 * x) + -1) * -1)
+2025-01-18T02:54:37.807156Z TRACE cas: Search depth: 90
+2025-01-18T02:54:37.808199Z TRACE cas: Found unvisited expression: (((x ^ 3) * -1) + (3 * (x ^ 2))) = ((3 * x) + -1)
+2025-01-18T02:54:37.808205Z TRACE cas: Search depth: 91
+2025-01-18T02:54:37.809049Z TRACE cas: Already visited expression: ((x ^ 3) + ((x ^ 2) * -3)) = (((3 * x) + -1) * -1)
+2025-01-18T02:54:37.809055Z TRACE cas: Already visited expression: ((x ^ 3) + ((x ^ 2) * -3)) = (((3 * x) + -1) * -1)
+2025-01-18T02:54:37.809059Z TRACE cas: Found unvisited expression: (-1 + (x * 3)) = ((3 * (x ^ 2)) + ((x ^ 3) * -1))
+2025-01-18T02:54:37.809061Z TRACE cas: Search depth: 92
+2025-01-18T02:54:37.809846Z TRACE cas: Found unvisited expression: ((-1 + (x * 3)) * -1) = ((-3 * (x ^ 2)) + (x ^ 3))
+2025-01-18T02:54:37.809850Z TRACE cas: Search depth: 93
+2025-01-18T02:54:37.810695Z TRACE cas: Found unvisited expression: (-3 * (x ^ 2)) = ((1 + (x * -3)) + ((x ^ 3) * -1))
+2025-01-18T02:54:37.810698Z TRACE cas: Search depth: 94
+2025-01-18T02:54:37.811560Z TRACE cas: Found unvisited expression: -1 = (((x * 3) + ((x ^ 2) * (-3 + x))) * -1)
+2025-01-18T02:54:37.811564Z TRACE cas: Search depth: 95
+2025-01-18T02:54:37.812456Z TRACE cas: Already visited expression: -1 = (((x * 3) + ((x ^ 2) * (-3 + x))) * -1)
+2025-01-18T02:54:37.812463Z TRACE cas: Found unvisited expression: (-1 * (((x ^ 2) * (x + -3)) + (3 * x))) = -1
+2025-01-18T02:54:37.812476Z TRACE cas: Search depth: 96
+2025-01-18T02:54:37.813283Z TRACE cas: Already visited expression: (((x * 3) + ((-3 + x) * (x ^ 2))) * -1) = -1
+2025-01-18T02:54:37.813295Z TRACE cas: Already visited expression: (-1 * (((x ^ 2) * (x + -3)) + (3 * x))) = -1
+2025-01-18T02:54:37.813299Z TRACE cas: Already visited expression: -1 = (((x * 3) + ((-3 + x) * (x ^ 2))) * -1)
+2025-01-18T02:54:37.813310Z TRACE cas: Found unvisited expression: ((x ^ 3) + (((x ^ 2) * -3) + -1)) = (-3 * x)
+2025-01-18T02:54:37.813312Z TRACE cas: Search depth: 97
+2025-01-18T02:54:37.814027Z TRACE cas: Found unvisited expression: (-1 + ((-3 * (x ^ 2)) + (x ^ 3))) = (x * -3)
+2025-01-18T02:54:37.814031Z TRACE cas: Search depth: 98
+2025-01-18T02:54:37.814756Z TRACE cas: Found unvisited expression: (((x ^ 2) * ((x + -3) * -1)) + 1) = (3 * x)
+2025-01-18T02:54:37.814761Z TRACE cas: Search depth: 99
+2025-01-18T02:54:37.815479Z TRACE cas: Already visited expression: (((x ^ 2) * ((x + -3) * -1)) + 1) = (3 * x)
+2025-01-18T02:54:37.815490Z TRACE cas: Found unvisited expression: (1 + (-1 * ((-3 + x) * (x ^ 2)))) = (x * 3)
+2025-01-18T02:54:37.815492Z TRACE cas: Search depth: 100
+2025-01-18T02:54:37.816270Z TRACE cas: Found unvisited expression: ((((-3 * (x ^ 2)) + (x ^ 3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.816273Z TRACE cas: Search depth: 101
+2025-01-18T02:54:37.817097Z  INFO cas: Found new candidate at iteration 101   | ((-3 * (x ^ 2)) + (((x ^ 3) + (3 * x)) + -1)) = 0
+2025-01-18T02:54:37.817136Z TRACE cas: Found unvisited expression: ((((x ^ 3) + (-3 * (x ^ 2))) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.817138Z TRACE cas: Search depth: 102
+2025-01-18T02:54:37.817924Z TRACE cas: Found unvisited expression: (((x + -3) * (x ^ 2)) + ((3 * x) + -1)) = 0
+2025-01-18T02:54:37.817929Z TRACE cas: Search depth: 103
+2025-01-18T02:54:37.818660Z TRACE cas: Already visited expression: (((x + -3) * (x ^ 2)) + ((3 * x) + -1)) = 0
+2025-01-18T02:54:37.818676Z TRACE cas: Found unvisited expression: ((-3 * (x ^ 2)) + ((x ^ 3) + (3 * x))) = 1
+2025-01-18T02:54:37.818678Z TRACE cas: Search depth: 104
+2025-01-18T02:54:37.819546Z TRACE cas: Already visited expression: (-1 + ((x * 3) + ((x ^ 2) * (-3 + x)))) = 0
+2025-01-18T02:54:37.819551Z TRACE cas: Already visited expression: (-1 + ((x * 3) + ((x ^ 2) * (-3 + x)))) = 0
+2025-01-18T02:54:37.819557Z TRACE cas: Already visited expression: (((x * 3) + ((-3 + x) * (x ^ 2))) + -1) = 0
+2025-01-18T02:54:37.819562Z TRACE cas: Found unvisited expression: ((-1 + ((x ^ 2) * (x + -3))) + (3 * x)) = 0
+2025-01-18T02:54:37.819564Z TRACE cas: Search depth: 105
+2025-01-18T02:54:37.820393Z TRACE cas: Already visited expression: ((-1 + ((x ^ 2) * (x + -3))) + (3 * x)) = 0
+2025-01-18T02:54:37.820409Z TRACE cas: Already visited expression: (((x * 3) + ((-3 + x) * (x ^ 2))) + -1) = 0
+2025-01-18T02:54:37.820422Z TRACE cas: Found unvisited expression: (((x * 3) + ((x ^ 2) * (-3 + x))) + -1) = 0
+2025-01-18T02:54:37.820424Z TRACE cas: Search depth: 106
+2025-01-18T02:54:37.821230Z TRACE cas: Already visited expression: (((-3 * (x ^ 2)) + (x ^ 3)) + (3 * x)) = 1
+2025-01-18T02:54:37.821242Z TRACE cas: Already visited expression: (((x * 3) + ((x ^ 2) * (-3 + x))) + -1) = 0
+2025-01-18T02:54:37.821254Z TRACE cas: Found unvisited expression: ((-1 + (x * 3)) + (((x ^ 2) * -3) + (x ^ 3))) = 0
+2025-01-18T02:54:37.821257Z TRACE cas: Search depth: 107
+2025-01-18T02:54:37.822047Z TRACE cas: Already visited expression: ((x ^ 3) + (((x ^ 2) * -3) + ((3 * x) + -1))) = 0
+2025-01-18T02:54:37.822054Z TRACE cas: Found unvisited expression: -1 = (((-1 * (x ^ 3)) + (3 * (x ^ 2))) + (-3 * x))
+2025-01-18T02:54:37.822056Z TRACE cas: Search depth: 108
+2025-01-18T02:54:37.822189Z DEBUG cas: No C term found, setting to 1
+2025-01-18T02:54:37.822201Z DEBUG cas: Expr: -1 = (((-1 * (x ^ 3)) + (3 * (x ^ 2))) + (-3 * x))
+2025-01-18T02:54:37.822203Z DEBUG cas:    Found cubic -1*x^3 + 3*x^2 + -3*x + 1 = 0
+2025-01-18T02:54:37.822206Z DEBUG cas:    Solutions: [1.0]
+2025-01-18T02:54:37.822943Z  INFO cas: Found new candidate at iteration 108   | x = 1
+2025-01-18T02:54:37.822962Z TRACE cas: Found unvisited expression: (-1 + (((x ^ 3) + ((x ^ 2) * -3)) + (3 * x))) = 0
+2025-01-18T02:54:37.822971Z TRACE cas: Search depth: 109
+2025-01-18T02:54:37.823879Z TRACE cas: Found unvisited expression: ((-1 + ((x * 3) + ((x ^ 2) * -3))) + (x ^ 3)) = 0
+2025-01-18T02:54:37.823883Z TRACE cas: Search depth: 110
+2025-01-18T02:54:37.824695Z TRACE cas: Already visited expression: ((((x * 3) + ((-3 + x) * (x ^ 2))) * -1) + 1) = 0
+2025-01-18T02:54:37.824703Z TRACE cas: Found unvisited expression: (1 + (((x * 3) + ((-3 + x) * (x ^ 2))) * -1)) = 0
+2025-01-18T02:54:37.824706Z TRACE cas: Search depth: 111
+2025-01-18T02:54:37.825512Z TRACE cas: Already visited expression: (-1 + ((x * 3) + ((-3 * (x ^ 2)) + (x ^ 3)))) = 0
+2025-01-18T02:54:37.825519Z TRACE cas: Already visited expression: ((-1 + ((x * 3) + (-3 * (x ^ 2)))) + (x ^ 3)) = 0
+2025-01-18T02:54:37.825525Z TRACE cas: Already visited expression: (((x ^ 3) + (((x ^ 2) * -3) + (3 * x))) + -1) = 0
+2025-01-18T02:54:37.825538Z TRACE cas: Found unvisited expression: ((x * 3) + (((-3 * (x ^ 2)) + (x ^ 3)) + -1)) = 0
+2025-01-18T02:54:37.825540Z TRACE cas: Search depth: 112
+2025-01-18T02:54:37.826350Z TRACE cas: Found unvisited expression: ((((x * 3) + (-3 * (x ^ 2))) + (x ^ 3)) + -1) = 0
+2025-01-18T02:54:37.826354Z TRACE cas: Search depth: 113
+2025-01-18T02:54:37.827249Z TRACE cas: Already visited expression: (-1 + (((x ^ 3) + ((x ^ 2) * -3)) + (3 * x))) = 0
+2025-01-18T02:54:37.827258Z TRACE cas: Already visited expression: (((x ^ 3) + (((x ^ 2) * -3) + (3 * x))) + -1) = 0
+2025-01-18T02:54:37.827264Z TRACE cas: Already visited expression: (-1 + (((x ^ 3) + ((x ^ 2) * -3)) + (3 * x))) = 0
+2025-01-18T02:54:37.827271Z TRACE cas: Found unvisited expression: (((((-3 + x) * (x ^ 2)) * -1) + (-3 * x)) + 1) = 0
+2025-01-18T02:54:37.827274Z TRACE cas: Search depth: 114
+2025-01-18T02:54:37.827987Z TRACE cas: Found unvisited expression: (((-3 * x) + (((x ^ 2) * (-3 + x)) * -1)) + 1) = 0
+2025-01-18T02:54:37.827990Z TRACE cas: Search depth: 115
+2025-01-18T02:54:37.828787Z TRACE cas: Already visited expression: ((((x * 3) + (-3 * (x ^ 2))) + (x ^ 3)) + -1) = 0
+2025-01-18T02:54:37.828794Z TRACE cas: Found unvisited expression: ((((x * 3) + ((x ^ 2) * (-3 + x))) * -1) + 1) = 0
+2025-01-18T02:54:37.828796Z TRACE cas: Search depth: 116
+2025-01-18T02:54:37.829647Z TRACE cas: Already visited expression: (((-3 * x) + (((x ^ 2) * (-3 + x)) * -1)) + 1) = 0
+2025-01-18T02:54:37.829661Z TRACE cas: Already visited expression: ((((x * 3) + ((x ^ 2) * (-3 + x))) * -1) + 1) = 0
+2025-01-18T02:54:37.829665Z TRACE cas: Already visited expression: ((-1 * (((x ^ 2) * (x + -3)) + (3 * x))) + 1) = 0
+2025-01-18T02:54:37.829676Z TRACE cas: Found unvisited expression: (((x + -3) * (x ^ 2)) + (3 * x)) = 1
+2025-01-18T02:54:37.829678Z TRACE cas: Search depth: 117
+2025-01-18T02:54:37.830321Z TRACE cas: Found unvisited expression: 1 = (((x ^ 2) * (x + -3)) + (3 * x))
+2025-01-18T02:54:37.830324Z TRACE cas: Search depth: 118
+2025-01-18T02:54:37.831103Z TRACE cas: Already visited expression: (((x + -3) * (x ^ 2)) + (3 * x)) = 1
+2025-01-18T02:54:37.831110Z TRACE cas: Found unvisited expression: 1 = ((x * 3) + ((-3 + x) * (x ^ 2)))
+2025-01-18T02:54:37.831113Z TRACE cas: Search depth: 119
+2025-01-18T02:54:37.831786Z TRACE cas: Already visited expression: (x ^ 3) = (((-3 * x) + 1) + (3 * (x ^ 2)))
+2025-01-18T02:54:37.831792Z TRACE cas: Already visited expression: (x ^ 3) = (((-3 * x) + 1) + (3 * (x ^ 2)))
+2025-01-18T02:54:37.831797Z TRACE cas: Already visited expression: (x ^ 3) = (((-3 * x) + 1) + (3 * (x ^ 2)))
+2025-01-18T02:54:37.831803Z TRACE cas: Already visited expression: ((x ^ 3) + (-3 * (x ^ 2))) = ((-3 * x) + 1)
+2025-01-18T02:54:37.831810Z TRACE cas: Found unvisited expression: (1 + (-3 * x)) = ((-3 * (x ^ 2)) + (x ^ 3))
+2025-01-18T02:54:37.831812Z TRACE cas: Search depth: 120
+2025-01-18T02:54:37.832583Z TRACE cas: Found unvisited expression: (1 + ((-1 * ((x ^ 3) + ((x ^ 2) * -3))) + (-3 * x))) = 0
+2025-01-18T02:54:37.832586Z TRACE cas: Search depth: 121
+2025-01-18T02:54:37.833557Z TRACE cas: Found unvisited expression: (((-1 * ((x ^ 3) + ((x ^ 2) * -3))) + (-3 * x)) + 1) = 0
+2025-01-18T02:54:37.833584Z TRACE cas: Search depth: 122
+2025-01-18T02:54:37.834466Z TRACE cas: Found unvisited expression: (((((x * 3) + (-3 * (x ^ 2))) + (x ^ 3)) * -1) + 1) = 0
+2025-01-18T02:54:37.834472Z TRACE cas: Search depth: 123
+2025-01-18T02:54:37.835289Z TRACE cas: Found unvisited expression: (((-3 * x) + (((-3 * (x ^ 2)) + (x ^ 3)) * -1)) + 1) = 0
+2025-01-18T02:54:37.835293Z TRACE cas: Search depth: 124
+2025-01-18T02:54:37.836157Z TRACE cas: Found unvisited expression: (1 + (-1 * (((x ^ 3) + ((x ^ 2) * -3)) + (3 * x)))) = 0
+2025-01-18T02:54:37.836160Z TRACE cas: Search depth: 125
+2025-01-18T02:54:37.836941Z TRACE cas: Already visited expression: (1 + (-1 * (((x ^ 3) + ((x ^ 2) * -3)) + (3 * x)))) = 0
+2025-01-18T02:54:37.836952Z TRACE cas: Found unvisited expression: (1 + ((-1 * ((x ^ 3) + ((x ^ 2) * -3))) + (x * -3))) = 0
+2025-01-18T02:54:37.836955Z TRACE cas: Search depth: 126
+2025-01-18T02:54:37.837782Z TRACE cas: Found unvisited expression: (((-1 * ((x ^ 3) + ((x ^ 2) * -3))) + (x * -3)) + 1) = 0
+2025-01-18T02:54:37.837788Z TRACE cas: Search depth: 127
+2025-01-18T02:54:37.838637Z TRACE cas: Already visited expression: (((-1 * ((x ^ 3) + ((x ^ 2) * -3))) + (-3 * x)) + 1) = 0
+2025-01-18T02:54:37.838649Z TRACE cas: Already visited expression: (((-3 * x) + (((-3 * (x ^ 2)) + (x ^ 3)) * -1)) + 1) = 0
+2025-01-18T02:54:37.838662Z TRACE cas: Found unvisited expression: (((((-3 * (x ^ 2)) + (x ^ 3)) * -1) + (-3 * x)) + 1) = 0
+2025-01-18T02:54:37.838664Z TRACE cas: Search depth: 128
+2025-01-18T02:54:37.839439Z TRACE cas: Found unvisited expression: ((((x * (x ^ 2)) + (-3 * (x ^ 2))) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.839446Z TRACE cas: Search depth: 129
+2025-01-18T02:54:37.840196Z TRACE cas: Found unvisited expression: ((x * 3) + (((-3 * (x ^ 2)) + (x * (x ^ 2))) + -1)) = 0
+2025-01-18T02:54:37.840200Z TRACE cas: Search depth: 130
+2025-01-18T02:54:37.840925Z TRACE cas: Already visited expression: (-1 + (((x * 3) + (-3 * (x ^ 2))) + (x * (x ^ 2)))) = 0
+2025-01-18T02:54:37.840933Z TRACE cas: Already visited expression: (-1 + ((x * 3) + ((-3 * (x ^ 2)) + (x * (x ^ 2))))) = 0
+2025-01-18T02:54:37.840940Z TRACE cas: Already visited expression: ((-1 + ((x * 3) + (-3 * (x ^ 2)))) + (x * (x ^ 2))) = 0
+2025-01-18T02:54:37.840948Z TRACE cas: Already visited expression: ((x * 3) + (((-3 * (x ^ 2)) + (x * (x ^ 2))) + -1)) = 0
+2025-01-18T02:54:37.840954Z TRACE cas: Found unvisited expression: ((((x * 3) + (-3 * (x ^ 2))) + (x * (x ^ 2))) + -1) = 0
+2025-01-18T02:54:37.840956Z TRACE cas: Search depth: 131
+2025-01-18T02:54:37.841734Z TRACE cas: Already visited expression: ((((x * 3) + (-3 * (x ^ 2))) + (x * (x ^ 2))) + -1) = 0
+2025-01-18T02:54:37.841741Z TRACE cas: Found unvisited expression: ((3 * x) + -1) = ((-1 * (x ^ 3)) + (3 * (x ^ 2)))
+2025-01-18T02:54:37.841743Z TRACE cas: Search depth: 132
+2025-01-18T02:54:37.842564Z TRACE cas: Found unvisited expression: ((x * 3) + ((x ^ 3) + ((x ^ 2) * -3))) = 1
+2025-01-18T02:54:37.842569Z TRACE cas: Search depth: 133
+2025-01-18T02:54:37.843245Z TRACE cas: Already visited expression: ((x * 3) + ((-3 * (x ^ 2)) + (x ^ 3))) = 1
+2025-01-18T02:54:37.843263Z TRACE cas: Found unvisited expression: ((x * 3) + (((x ^ 2) * -3) + (x ^ 3))) = 1
+2025-01-18T02:54:37.843265Z TRACE cas: Search depth: 134
+2025-01-18T02:54:37.843878Z TRACE cas: Found unvisited expression: (((x ^ 3) + (-3 * (x ^ 2))) + -1) = (-3 * x)
+2025-01-18T02:54:37.843885Z TRACE cas: Search depth: 135
+2025-01-18T02:54:37.844579Z TRACE cas: Found unvisited expression: -1 = (((-3 + x) * ((x ^ 2) * -1)) + (-3 * x))
+2025-01-18T02:54:37.844587Z TRACE cas: Search depth: 136
+2025-01-18T02:54:37.845198Z TRACE cas: Found unvisited expression: ((((-3 + x) * (x ^ 2)) * -1) + (-3 * x)) = -1
+2025-01-18T02:54:37.845201Z TRACE cas: Search depth: 137
+2025-01-18T02:54:37.845851Z TRACE cas: Found unvisited expression: -1 = ((x * -3) + (-1 * ((x ^ 2) * (x + -3))))
+2025-01-18T02:54:37.845854Z TRACE cas: Search depth: 138
+2025-01-18T02:54:37.846629Z TRACE cas: Found unvisited expression: -1 = ((-3 * x) + ((x ^ 2) * ((-3 + x) * -1)))
+2025-01-18T02:54:37.846638Z TRACE cas: Search depth: 139
+2025-01-18T02:54:37.847381Z TRACE cas: Found unvisited expression: ((-3 * x) + (((x ^ 2) * (-3 + x)) * -1)) = -1
+2025-01-18T02:54:37.847384Z TRACE cas: Search depth: 140
+2025-01-18T02:54:37.848190Z TRACE cas: Found unvisited expression: -1 = ((-1 * ((x + -3) * (x ^ 2))) + (x * -3))
+2025-01-18T02:54:37.848193Z TRACE cas: Search depth: 141
+2025-01-18T02:54:37.848934Z TRACE cas: Already visited expression: ((x * 3) + ((-3 * (x ^ 2)) + (x ^ 3))) = 1
+2025-01-18T02:54:37.848939Z TRACE cas: Already visited expression: ((x ^ 3) + (((x ^ 2) * -3) + (3 * x))) = 1
+2025-01-18T02:54:37.848944Z TRACE cas: Already visited expression: ((x ^ 3) + (((x ^ 2) * -3) + (3 * x))) = 1
+2025-01-18T02:54:37.848948Z TRACE cas: Found unvisited expression: ((-1 * ((-3 + x) * (x ^ 2))) + (-3 * x)) = -1
+2025-01-18T02:54:37.848950Z TRACE cas: Search depth: 142
+2025-01-18T02:54:37.849685Z TRACE cas: Already visited expression: -1 = (((-3 + x) * ((x ^ 2) * -1)) + (-3 * x))
+2025-01-18T02:54:37.849691Z TRACE cas: Found unvisited expression: (((-1 * (-3 + x)) * (x ^ 2)) + (-3 * x)) = -1
+2025-01-18T02:54:37.849693Z TRACE cas: Search depth: 143
+2025-01-18T02:54:37.850497Z TRACE cas: Already visited expression: ((-3 * x) + (((x ^ 2) * (-3 + x)) * -1)) = -1
+2025-01-18T02:54:37.850504Z TRACE cas: Found unvisited expression: -1 = (((-1 * (x ^ 3)) + (3 * (x ^ 2))) + (x * -3))
+2025-01-18T02:54:37.850506Z TRACE cas: Search depth: 144
+2025-01-18T02:54:37.851225Z TRACE cas: Found unvisited expression: -1 = ((-3 * x) + ((3 * (x ^ 2)) + ((x ^ 3) * -1)))
+2025-01-18T02:54:37.851231Z TRACE cas: Search depth: 145
+2025-01-18T02:54:37.852041Z TRACE cas: Found unvisited expression: -1 = (((3 * (x ^ 2)) + ((x ^ 3) * -1)) + (-3 * x))
+2025-01-18T02:54:37.852048Z TRACE cas: Search depth: 146
+2025-01-18T02:54:37.852841Z TRACE cas: Found unvisited expression: -1 = (((-1 * (x ^ 3)) + ((x ^ 2) * 3)) + (x * -3))
+2025-01-18T02:54:37.852850Z TRACE cas: Search depth: 147
+2025-01-18T02:54:37.853562Z TRACE cas: Already visited expression: -1 = (((3 * (x ^ 2)) + ((x ^ 3) * -1)) + (-3 * x))
+2025-01-18T02:54:37.853571Z TRACE cas: Found unvisited expression: (((((x * 3) + (-3 * (x ^ 2))) + (x * (x ^ 2))) * -1) + 1) = 0
+2025-01-18T02:54:37.853573Z TRACE cas: Search depth: 148
+2025-01-18T02:54:37.854403Z TRACE cas: Already visited expression: (((-3 * x) + (((-3 * (x ^ 2)) + (x * (x ^ 2))) * -1)) + 1) = 0
+2025-01-18T02:54:37.854411Z TRACE cas: Found unvisited expression: ((-3 * x) + ((((-3 * (x ^ 2)) + (x * (x ^ 2))) * -1) + 1)) = 0
+2025-01-18T02:54:37.854413Z TRACE cas: Search depth: 149
+2025-01-18T02:54:37.855147Z TRACE cas: Found unvisited expression: (((-3 * x) + ((3 * (x ^ 2)) + ((x * (x ^ 2)) * -1))) + 1) = 0
+2025-01-18T02:54:37.855152Z TRACE cas: Search depth: 150
+2025-01-18T02:54:37.855994Z TRACE cas: Found unvisited expression: x = 1
+2025-01-18T02:54:37.855997Z TRACE cas: Search depth: 151
+2025-01-18T02:54:37.856003Z  INFO cas: Found irreducible expression: x = 1
+2025-01-18T02:54:37.856005Z TRACE cas: Stopped on iteration 151
+2025-01-18T02:54:37.856009Z  INFO cas: Candidate solutions:
+2025-01-18T02:54:37.856682Z  INFO cas:    Score: 0 | x = 1
+2025-01-18T02:54:37.856688Z  INFO cas:    Score: 1428 | ((((-3 * (x ^ 2)) + (x ^ 3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.856693Z  INFO cas:    Score: 1428 | ((((x ^ 3) + (-3 * (x ^ 2))) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.857148Z  INFO cas: Ran for 151 iterations
+2025-01-18T02:54:37.857152Z  INFO cas: Result: x = 1
+2025-01-18T02:54:37.857155Z  INFO cas: *** END EVALUTION ***
+2025-01-18T02:54:37.857500Z  INFO cas: Path for ((((x ^ 2) * (x + -3)) + (3 * x)) + -1) = 0
+2025-01-18T02:54:37.857614Z  INFO cas: Applied Commutative               | (-1 + ((x * 3) + ((-3 + x) * (x ^ 2)))) = 0
+2025-01-18T02:54:37.857875Z  INFO cas: Applied Balance to left equation  | -1 = (((x * 3) + ((-3 + x) * (x ^ 2))) * -1)
+2025-01-18T02:54:37.857963Z  INFO cas: Applied Commutative               | -1 = (-1 * (((x ^ 2) * (x + -3)) + (3 * x)))
+2025-01-18T02:54:37.858208Z  INFO cas: Applied Distribute                | -1 = ((-1 * ((x ^ 3) + ((x ^ 2) * -3))) + (-3 * x))
+2025-01-18T02:54:37.858381Z  INFO cas: Applied Distribute                | -1 = (((-1 * (x ^ 3)) + (3 * (x ^ 2))) + (-3 * x))
+2025-01-18T02:54:37.858409Z DEBUG cas: No C term found, setting to 1
+2025-01-18T02:54:37.858416Z DEBUG cas: Expr: -1 = (((-1 * (x ^ 3)) + (3 * (x ^ 2))) + (-3 * x))
+2025-01-18T02:54:37.858417Z DEBUG cas:    Found cubic -1*x^3 + 3*x^2 + -3*x + 1 = 0
+2025-01-18T02:54:37.858419Z DEBUG cas:    Solutions: [1.0]
+2025-01-18T02:54:37.858443Z  INFO cas: Applied Simplify cubic            | x = 1
+2025-01-18T02:54:37.859211Z  INFO cas: Final expression: x = 1
