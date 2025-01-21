@@ -31,6 +31,12 @@ To demonstrate and test the library, I implemented a tiny math expression evalua
 
 ## Examples
 
+The example programs are located in the `examples` directory. To run an example, use the following command:
+
+```sh
+cargo run --example <example_name>
+```
+
 ### `tree!` macro
 
 To create a tree of an arbitrary node type, you can use the `tree!` macro:
@@ -74,20 +80,20 @@ fn main() {
     };
 
     let pattern = pattern! {
-        "head node";
-        @first_child;
-        ..
+        "head node";  // Match exactly the head node against the string "head node"
+        @first_child; // Bind the first child node to `first_child`
+        ..            // Match any number of children, including zero
     };
 
-    let matches = tree.does_match_pattern(&pattern);
-    println!("Does \"{pattern}\" match? -> {matches:?}");
+    let matches = tree.does_match_pattern(&pattern); // Does this whole tree match the pattern?
+    println!("Does \"{pattern}\" match? -> {matches:?}"); // Print the result
 
     let pattern2 = pattern! {
-        "this won't match";
-        ..
+        "this won't match"; // Match exactly the head node against the string "this won't match" (which will fail)
+        ..                 // Match any number of children, including zero
     };
 
-    let matches2 = tree.does_match_pattern(&pattern2);
+    let matches2 = tree.does_match_pattern(&pattern2); // Does this whole tree match the pattern?
     println!("Does \"{pattern2}\" match? -> {matches2:?}");
 }
 ```
@@ -129,6 +135,7 @@ fn commutative(expr: Expr) -> Expr {
     use Atom::*;
     // Apply the commutative property for Add and Mul operations
     let expr = rewrite!(
+        // The tree to apply the rewrite rule to
         expr,
         // Bind the matched subtree to `this` in the pattern
         this = pattern![
@@ -144,6 +151,7 @@ fn commutative(expr: Expr) -> Expr {
             // Return a new tree with the head node and children swapped
             tree![
                 op.clone();
+                // Flip the order of the children
                 b.clone();
                 a.clone();
             ]
@@ -181,3 +189,22 @@ fn main() {
     println!("After commutative property: {}", expr);
 }
 ```
+
+## Usage
+
+Add the following to your `Cargo.toml`:
+
+```toml
+[dependencies]
+trees = { git = "https://github.com/adam-mcdaniel/trees" }
+```
+
+Then, you can use the library in your Rust code:
+
+```rust
+use trees::*;
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
